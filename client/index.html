@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div>
-        <h1>Formulário de Cadastro</h1>
-        <input id="nameUser" type="text" placeholder="Nome de usuário" required>
-        <input id="emailUser" type="email" placeholder="Endereço de e-mail" required>
-        <input id="password" type="password" placeholder="Digite sua senha" required>
-        <input id="passwordConf" type="password" placeholder="Repita a senha" required>
-        <button id="buttonRegister">CADASTRAR</button>
+    <header class="header">
+        <img class="header-imagem"
+            src="/imagens/122d2feba00bc673187fec324977ca78-silhueta-recortada-de-uma-mae-amorosa-no-tempo-de-maternidade.webp"
+            alt="logo maternidade">
+        <h1 class="header-h1">Mamães sem Dúvidas</h1>
+        <ul>
+            <li><a href="./home.html"></a> Home</li>
+            <li><a href="./gravidez.html"></a> Gravidez</li>
+            <li><a href="./parto e pos parto.html"></a> Parto e Pós Parto</li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </header>
+
+    <h3 class="main-h3">
+        Conteúdo e dicas exclusivas que ajudarão a preparar a chegada do seu bebé.
+        Inscreva-se já nos próximos eventos.
+    </h3>
+    <main class="main">
+        <div class="card">
+            <img src="/imagens/alimentaçao na gravidez.jpg" alt="">
+            <p>Alimentação na Gravidez</p>
+        </div>
+        <div class="card">
+            <img src="/imagens/amamentaçao.jpeg" alt="">
+            <p>Amamentação</p>
+        </div>
+        <div class="card">
+            <img src="/imagens/saude do bebe.jpeg" alt="">
+            <p>Saúde do Bebé</p>
+        </div>
+    </main>
+    <div class="form">
+        <h2>Inscreva-se para receber novidades</h2>
+        <p>Fique por dentro de eventos, dicas e conteúdos sobre maternidade 💕</p>
+        <form action="" method="post" class="form">
+            <input id="nameUser" type="text" placeholder="Nome de usuário" required>
+            <input id="emailUser" type="email" placeholder="Endereço de e-mail" required>
+            <input id="password" type="password" placeholder="Digite sua senha" required>
+            <input id="passwordConf" type="password" placeholder="Repita a senha" required>
+            <input id="buttonRegister" type="submit" value="Cadastrar"></input>
+        </form>
     </div>
+    <script src="./script.js"></script>
 </body>
+
 </html>
