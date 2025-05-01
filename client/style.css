@@ -78,43 +78,54 @@ body {
   font-size: 20px;
 }
 
-.form {
-  min-height: 40%;
+.form-section{
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  padding: 32px;
-  gap: 16px;
+  align-items: center;
+  background-color: #fce4ec;
+  padding: 48px;
 }
 
 .form-container {
+  background-color: #cdcccc44;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-#nome,
-#email,
-#telefone,
-#mensagem {
-  width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
+.form-container h2 {
+  font-family: "Playfair", serif;
+  font-size: 36px;
+  color: #6a1b9a;
+  margin-bottom: 8px;
+}
+
+.form-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.form-fields input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  border-radius: 10px;
   font-size: 1rem;
   box-sizing: border-box;
 }
 
-/* Estilo para textarea */
-#mensagem {
-  resize: vertical;
+#buttonRegister {
+  background-color: #fbc2eb;
+  color: #6a1b9a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-/* Estilo para os labels, se estiverem presentes */
-label {
-  display: block;
-  text-align: left;
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 0.2rem;
+#buttonRegister:hover {
+  background-color: #a6c1ee;
 }
