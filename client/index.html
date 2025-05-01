@@ -1,101 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulário</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    
-    <body>
-        <nav>
-            <img class="logo-menu" src="./imagens/122d2feba00bc673187fec324977ca78-silhueta-recortada-de-uma-mae-amorosa-no-tempo-de-maternidade.webp" alt="logo maternidade">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <div class="menu-top">
+            <img class="logo-menu"
+                src="./imagens/logo.png"
+                alt="logo maternidade">
             <h1 class="menu-title">Mamães sem Dúvidas</h1>
-            <div class="menu">
-                <ul class="container-menu">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" ref="./home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./gravidez.html">Gravidez</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./parto e pos parto.html">Parto e Pós Parto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./contato.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-          </nav>
+        </div>
+        <ul class="container-menu">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" ref="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./gravidez.html">Gravidez</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./parto e pos parto.html">Parto e Pós Parto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contato.html">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main class="main">
         <h3 class="main-h3">
             Conteúdo e dicas exclusivas que ajudarão a preparar a chegada do seu bebé.
             Inscreva-se já nos próximos eventos.
         </h3>
-        <main class="main">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./imagens/2149125032.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>amamentaçao</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagens/2148880501.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Saúde do bebe</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./imagens/18030.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Alimentação na gravidez</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-        </main>
-        <script src="./script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-            crossorigin="anonymous"></script>
-    </body>
-    <footer class="form">
-        <div class="form-container">
-            <h2>Inscreva-se para receber novidades</h2>
-            <p>Fique por dentro de eventos, dicas e conteúdos sobre maternidade 💕</p>
-            <form action="" method="post" class="form">
-                <input id="nameUser" type="text" placeholder="Nome de usuário" required>
-                <input id="emailUser" type="email" placeholder="Endereço de e-mail" required>
-                <input id="password" type="password" placeholder="Digite sua senha" required>
-                <input id="passwordConf" type="password" placeholder="Repita a senha" required>
-                <input id="buttonRegister" type="submit" value="Cadastrar"></input>
-            </form>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagens/2149125032.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>amamentaçao</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/2148880501.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Saúde do bebe</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagens/18030.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Alimentação na gravidez</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </footer>
-    
-    </html>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+<footer class="form">
+    <div class="form-container">
+        <h2>Inscreva-se para receber novidades</h2>
+        <p>Fique por dentro de eventos, dicas e conteúdos sobre maternidade 💕</p>
+        <form action="" method="post" class="form">
+            <input id="nameUser" type="text" placeholder="Nome de usuário" required>
+            <input id="emailUser" type="email" placeholder="Endereço de e-mail" required>
+            <input id="password" type="password" placeholder="Digite sua senha" required>
+            <input id="passwordConf" type="password" placeholder="Repita a senha" required>
+            <input id="buttonRegister" type="submit" value="Cadastrar"></input>
+        </form>
+    </div>
+</footer>
+
+</html>

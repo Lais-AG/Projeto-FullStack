@@ -1,51 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+RO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   height: 100vh;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   background-color: #fff3f7;
 }
 
-nav {
+.menu {
   background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.logo-menu{
-  width: 45px;
-  height: 45px;
-}
-
-.menu-title{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
-  color: #6a1b9a;
-  font-family: "Bebas Neue", sans-serif;
-  font-family: 'Playwrite RO', cursive;
-  font-weight: 200;
-  font-style: normal
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  gap: 32px;
 }
 
-.menu{
-
-}
-
-.container-menu{
+.menu-top {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  gap: 8px;
+}
 
+.menu-title {
+  color: #6a1b9a;
+  font-family: "Playfair", serif;
+  font-weight: 200;
+  font-size: 32px;
+}
+
+.container-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #6a1b9a;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.nav-link:hover {
+  transform: scale(1.125);
+  color: #6f6d6d;
 }
 
 .header {
@@ -58,50 +65,17 @@ nav {
   transition: box-shadow 0.3s ease;
 }
 
-.main-h3{
-  padding: 16px;
-  font-size: 20px;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  width: 100%;
-  margin-top: 96px;
-  padding: 32px;
-  border-top: 1px solid white;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #1a2377;
-  cursor: pointer;
-  transition: 0.3s ease-out;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.menu li a:hover {
-  transform: scale(1.125);
-  color: #6f6d6d;
-}
-
-.main-h3 {
-  text-align: center;
-  font-family: "Bebas Neue", sans-serif;
-  font-family: 'Playwrite RO', cursive;
-  font-weight: 150;
-  padding: 32px;
-}
-
 .main {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: column;
+  padding: 64px;
+  gap: 64px;
+}
+
+.main-h3{
+  font-size: 20px;
 }
 
 .form {
@@ -113,7 +87,7 @@ nav {
   gap: 16px;
 }
 
-.form-container{
+.form-container {
   text-align: center;
 }
 
